@@ -37,5 +37,5 @@ add_library(Mem2Reg SHARED Mem2Reg.cpp)
 
 # Allow undefined symbols in shared objects on Darwin (this is the default
 # behaviour on Linux)
-target_link_libraries(HelloWorld
+target_link_libraries(Mem2Reg
   "$<$<PLATFORM_ID:Darwin>:-undefined dynamic_lookup>")
